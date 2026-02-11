@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3301 - Fase 1</title>
+    <style>
+        body {
+            background-color: #0d0d0d; /* Fundo quase preto */
+            color: #33ff33; /* Texto verde terminal */
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            border-bottom: 2px solid #33ff33;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .morse-container {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border: 1px dashed #33ff33;
+            margin-bottom: 30px;
+            word-wrap: break-word; /* Para o código não sair da tela no celular */
+            max-width: 80%;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .warning {
+            color: #ff3333; /* Vermelho para o aviso */
+            font-size: 0.9rem;
+            border: 1px solid #ff3333;
+            padding: 10px;
+            max-width: 500px;
+        }
+        
+        /* Efeito de piscar o cursor */
+        .cursor {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ACESSO CONCEDIDO<span class="cursor">_</span></h1>
+
+    <div class="message">
+        <p>Parabéns.</p>
+        <p>Você concluiu a primeira fase do desafio.</p>
+        <p>Isso mostra que você é capaz de resolver este enigma.</p>
+    </div>
+
+    <div class="morse-container">
+        .... - - .--. ... ---... -..-. -..-. .-- .-- .-- .-.-.- .-. --- -... .-.. --- -..- .-.-.- -.-. --- -- -..-. ..- ... . .-. ... -..-. .---- ----- ....- ----. ..... ..... .---- ....- .---- ..... .---- -..-. .--. .-. --- ..-. .. .-.. .
+    </div>
+
+    <div class="warning">
+        <strong>AVISO DO SISTEMA:</strong><br>
+        A tradução deve ser precisa.<br>
+        Caso o protocolo falhe, certifique-se de converter todos os caracteres para <strong>minúsculo</strong> antes de prosseguir.
+    </div>
+
+</body>
+</html>
